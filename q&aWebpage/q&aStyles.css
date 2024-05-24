@@ -1,0 +1,15 @@
+html{
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+h1,h3{
+    color: royalblue;
+    text-align:center;
+}
+h3{
+    font-weight: 500;
+    color: green;
+}
+#quiz{
+    margin-left: 5%;
+}

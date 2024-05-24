@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspect Me</title>
+    <link rel="stylesheet" href="q&aStyles.css">
+</head>
+<body>
+    <h1>Inspect Me</h1>
+    <h3>This is a simple Website to learn how to do CSS Inspection</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, perferendis soluta possimus eveniet rerum cupiditate nisi voluptates omnis repellat! Dicta, deleniti laboriosam unde et voluptatum fugiat error atque quidem alias?</p>
+<hr>
+<div id="quiz">
+   
+    <div class="ques">Q.1 What is the named color of the body?</div>
+    <input type="text" id="ans1">
+    <button onclick="ans1()">submit</button>
+    <p id="result1"></p>
+    
+    <div class="ques">Q.2 What is the font size of the h1?</div>
+    <input type="text" id="ans2">
+    <button onclick="ans2()">submit</button>
+    <p id="result2"></p>
+
+    <div class="ques">Q.3 What is the font weight of the h3?</div>
+    <input type="text" id="ans3">
+    <button onclick="ans3()">submit</button>
+    <p id="result3"></p>
+
+    <div class="ques">Q.4 What is the font family of the p?</div>
+    <input type="text" id="ans4">
+    <button onclick="ans4()">submit</button>
+    <p id="result4"></p>
+
+</div>
+<script>
+    function ans1(){
+        var a = document.getElementById("ans1").value;
+        if(a.toLowerCase()==="aliceblue" || a.toLowerCase()==="alice blue")
+            document.getElementById("result1").innerHTML="Correct"
+        else
+            document.getElementById("result1").innerHTML="InCorrect Try again"
+
+    }
+    function ans2(){
+        var a= document.getElementById("ans2").value;
+        if(a.toLowerCase()==="3rem" || a.toLowerCase()==="3 rem")
+            document.getElementById("result2").innerHTML="Correct";
+        else
+            document.getElementById("result2").innerHTML="InCorrect Try Again";
+    }
+    function ans3(){
+        var a= document.getElementById("ans3").value;
+        if(a==="500")
+            document.getElementById("result3").innerHTML = "correct";
+        else
+            document.getElementById("result3").innerHTML="InCorrect Try Again";
+
+    }
+    function ans4(){
+        var a= document.getElementById("ans4").value;
+        if(a.toLowerCase()==="arial, sans-serif" || a.toLowerCase()==="arial,sans-serif")
+            document.getElementById("result4").innerHTML = "Correct";
+        else
+            document.getElementById("result4").innerHTML="incorrect Try Again";
+        
+
+    }
+</script>
+</body>
+</html>
