@@ -1,0 +1,14 @@
+body {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    background-color: dodgerblue;
+
+  }
+ 
+button {
+    padding: 10px 15px;
+    background-color: yellowgreen;
+}
